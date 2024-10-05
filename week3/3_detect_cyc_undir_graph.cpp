@@ -40,4 +40,4 @@ bool isCycle(int V, vector<int> adj[]) {
     return false;
 }
 // SC queue + vis = 2N+N =O(3N)
-// TC NODES + total degree= O(N+2E)
+// TC NODES + total degree= O(N+2E)+O(N) main wala for loop(in worst case it will run for n times(disconnected graph))
