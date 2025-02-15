@@ -37,3 +37,10 @@ class Solution {
       }
 // Time Complexity: O(NlogN)
 // Space Complexity: O(N)
+
+//Summary:
+/*Non-static functions belong to an object, so they have an implicit this pointer.
+Sorting functions (std::sort()) expect a regular function, but a non-static function has this, causing an error.
+Solutions:
+Make the function static (so it doesn’t have this).
+Use a lambda function (so this is not needed).*/
